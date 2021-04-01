@@ -72,7 +72,7 @@ router.get("/:id", (req, res) => {
           note: note
         });
       } else {
-        res.redirect("/posts");
+        res.redirect("/notes");
       }
     });
 });
