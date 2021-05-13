@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Amazon SPA</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/main.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <nav>
+    <a href="" data-id="product-index">Products</a>
+    <a href="" data-id="product-new">New Product</a>
+  </nav>
+  <h1>Amazon</h1>
+  <div id="product-show" class="page"></div>
+  <div id="product-index" class="page visible"></div>
+  <div id="product-new" class="page">
+    <form action="">
+      <div>
+        <label for="title">Title</label>
+        <input type="text" name="product[title]">
+      </div>
+      <div>
+        <label for="description">Description</label>
+        <textarea name="product[description]"></textarea>
+      </div>
+      <div>
+        <label for="price">Price</label>
+        <input type="number" name="product[price]">
+      </div>
+      <div>
+        <input type="submit" value="Create Product">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

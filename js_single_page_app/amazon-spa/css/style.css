@@ -1,0 +1,20 @@
+body {
+	background-color: #ecf0f1;
+}
+
+#product-index {
+	padding: 0 20px;
+}
+
+.product-listing {
+	margin-bottom: 5px;
+	border-bottom: 1px solid black;
+}
+
+.page {
+	display: none;
+}
+
+.page.visible {
+	display: block;
+}

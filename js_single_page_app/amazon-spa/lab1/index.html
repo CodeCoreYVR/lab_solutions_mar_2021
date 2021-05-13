@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <link rel="stylesheet" href="css/master.css" />
+    <script src="js/main.js" async></script>
+    <title>Setup Amazing Amazon</title>
+  </head>
+  <body>
+    <div class="ui container">
+      <div class="ui secondary pointing menu navbar">
+        <a class="active item" data-target="welcome">
+          Welcome
+        </a>
+        <a class="item" data-target="product-index">
+          Products
+        </a>
+        <a class="item" data-target="product-new">
+          New Product
+        </a>
+      </div>
+
+      <div class="ui segment">
+        <!-- Welcome section -->
+        <section class="page active" id="welcome">
+          <div class="ui header">
+            Welcome to my Amazing Amazon App
+          </div>
+        </section>
+        <!-- Product show section -->
+        <section class="page" id="product-show"></section>
+        <!-- Product Index section -->
+        <section class="page" id="product-index">
+          <div class="ui header">Products</div>
+          <div class="ui list product-list"></div>
+        </section>
+        <!-- Create a new product section -->
+        <section class="page" id="product-new">
+          <div class="ui header">New Product</div>
+          <form class="ui form" id="new-product-form">
+            <div class="field">
+              <label for="title">Title</label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="enter product title"
+              />
+            </div>
+            <div class="field">
+              <label for="description">Description</label>
+              <textarea
+                name="description"
+                id="description"
+                placeholder="enter question description"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="field">
+              <label for="price">Price</label>
+              <input
+                type="number"
+                name="price"
+                id="price"
+                placeholder="enter product price"
+              />
+            </div>
+            <button class="ui teal button" type="submit">
+              Create Product
+            </button>
+          </form>
+        </section>
+        <!-- Edit Product section -->
+        <section class="page" id="product-edit">
+          <div class="ui header">Edit Product</div>
+          <form class="ui form" id="edit-product-form">
+            <div class="field">
+              <label for="title">Title</label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="enter product title"
+              />
+            </div>
+            <div class="field">
+              <label for="description">Description</label>
+              <textarea
+                name="description"
+                id="description"
+                placeholder="enter question description"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="field">
+              <label for="price">Price</label>
+              <input
+                type="number"
+                name="price"
+                id="price"
+                placeholder="enter product price"
+              />
+            </div>
+            <button class="ui teal button" type="submit">
+              Update Product
+            </button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
